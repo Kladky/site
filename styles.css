@@ -35,6 +35,24 @@ a:hover {
   font-size: 40px;
 }
 
+#icons i {
+  transition: scale 1.5s ease-in-out;
+}
+
+#icons i:hover {
+  transform: scale(1.1);
+}
+
 i {
   margin-right: 20px;
+}
+
+#email-container #email {
+  display: none;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+#email-container:hover #email {
+  display: inline-block;
 }

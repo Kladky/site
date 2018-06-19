@@ -9,13 +9,13 @@ let colors = [
 let allLinks = document.getElementsByTagName('a');
 
 let setColor = () => {
-    console.log("setting");
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
     for (let i = 0; i < allLinks.length; i++) {
         allLinks[i].setAttribute('style', `color: #${randomColor}`);
     }
 }
 
+console.log("Hi there! 👋");
 setColor();
 
 window.setInterval(setColor, 8000);
